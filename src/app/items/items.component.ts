@@ -10,6 +10,7 @@ export class ItemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('items component initiatlized')
   }
 
 }
