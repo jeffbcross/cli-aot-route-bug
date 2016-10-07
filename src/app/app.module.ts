@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 const timeout = 5000;
 
-class LateResolver implements Resolve<any> {
+export class LateResolver implements Resolve<any> {
   resolve() {
     return new Promise((res) => {
       console.log('i will resolve in', timeout, 'ms');
@@ -23,7 +23,6 @@ const homeRoute: Route = {
   path: '',
   component: HomeComponent
 };
-homeRoute.resolve
 
 const otherRoute: Route = {
   path: 'other',
